@@ -1,0 +1,77 @@
+@import "../../global-styles/breakpoints/index.scss";
+
+.dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.form {
+  background-color: var(--white);
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 1;
+  padding: 20px;
+
+  @media #{$desktop} {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__wrapper {
+    flex: 1 1 0px;
+    display: flex;
+
+    @media #{$mobile}, #{$tablet} {
+      justify-content: space-between;
+      margin-block: 20px;
+    }
+  }
+
+  label {
+    color: var(--black);
+    margin-inline-end: 10px;
+  }
+
+  input,
+  select {
+    border-width: 0;
+    border-block-end-width: 1px;
+
+    @media #{$mobile}, #{$tablet} {
+      width: 50%;
+    }
+
+    @media #{$desktop} {
+      width: 70%;
+    }
+  }
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400rem, 1fr));
+  grid-gap: 25px;
+  margin-block-end: 100rem;
+
+  @media #{$mobile}, #{$tablet} {
+    margin-block-start: 300rem;
+  }
+
+  @media #{$desktop} {
+    margin-block-start: 100rem;
+  }
+}
+
+.player {
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline: 0;
+}
+
+.lyrics {
+  text-align: center;
+  white-space: break-spaces;
+  margin-block-end: 200rem;
+}

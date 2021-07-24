@@ -1,0 +1,35 @@
+html {
+  @media #{$mobile} {
+    font-size: 0.7px;
+  }
+
+  @media #{$tablet} {
+    font-size: 0.85px;
+  }
+
+  @media #{$desktop} {
+    font-size: 1px;
+  }
+}
+
+body {
+  font-size: 20px;
+  font-family: roboto, sans-serif;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 70rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 35rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}

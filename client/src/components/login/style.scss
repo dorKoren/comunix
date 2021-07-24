@@ -1,0 +1,21 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  &__link {
+    padding: 20px;
+    color: white;
+    background-color: var(--green-light);
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__link:hover {
+    cursor: pointer;
+    background-color: var(--green-dark);
+  }
+}
